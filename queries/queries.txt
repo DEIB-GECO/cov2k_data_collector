@@ -1,0 +1,53 @@
+# finding variants with a given AA change
+{'org_2_aa_changes': {$elemMatch: { 'changes': 'ORF3a:P258*'}}}
+# or also
+{"org_2_aa_changes.changes": {$elemMatch: {$eq: "S:L452R"}}}
+
+# finding unique proteins matching /ORF.*/ in collection variants
+[{$match: {
+  'org_2_aa_changes.changes': /ORF.*/
+}}, {$project: {
+  'org_2_aa_changes.changes': 1
+}}, {$unwind: {
+  path: '$org_2_aa_changes'
+}}, {$unwind: {
+  path: '$org_2_aa_changes.changes'
+}}, {$replaceWith: {
+  change: '$org_2_aa_changes.changes'
+}}, {$match: {
+  change: /ORF.*/
+}}, {$replaceWith: {
+  change: {
+    $regexFind: {
+    input: '$change',
+    regex: /(ORF.*):.*/
+    }
+  }
+}}, {$project: {
+  change: {
+    $arrayElemAt: ['$change.captures', 0]
+  }
+}}, {$group: {
+  _id: '$change'
+}}]
+
+
+# find effects of variant (joining the collections)
+[{$match: {
+  _id: "C.17.clone"
+}}, {$lookup: {
+  from: 'effect',
+  localField: 'effects',
+  foreignField: '_id',
+  as: 'joinedEffects'
+}}, {$replaceWith: {
+  newRoot: "$joinedEffects"
+}}, {$unwind: {
+  path: "$newRoot",
+  preserveNullAndEmptyArrays: false
+}}, {$replaceWith: {
+  _id: "$newRoot._id",
+  type: "$newRoot.type",
+  lv: "$newRoot.lv",
+  method: "$newRoot.method"
+}}]

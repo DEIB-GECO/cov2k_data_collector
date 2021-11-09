@@ -1,0 +1,23 @@
+variant names to check:
+Brazil 2 in slikny antennae
+B.1.617 Clade 3 in spherical-trial (accompanied also by b.1.617.3)
+India in sphericlal-trial
+E484K in harbor sprite
+Debbie in animating-thermos
+B.1.617 Clade 2 in empathy -serve (accompanied by B.1.817)
+India in empathy-serve
+Philippines in mushroom-android
+ VOC2 in carnival-shimy
+ N501Y.V2 in carnival-shimy
+ South Arfica in carnival shimy
+ UK variant in denture-daughter
+ VOC1 in denture-daughter
+ N501Y.V1 ub debture-daughter
+ Kent variant in denture-daughter
+ Brazil 1 in marblin-doodle
+ Bristol in unloved-crouton
+ VOC1 + E484K in unloved-crouton
+ UK1188 in glorious-saucy
+ Liverpool in cheesy -stylin
+ India in habitable-pasty
+ SIM_B1621 in kelp-lesser

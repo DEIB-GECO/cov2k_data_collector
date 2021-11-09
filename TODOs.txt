@@ -1,0 +1,6 @@
+- unify syntax of changes
+- import Ruba's effects
+- talk to Luca for uniprot data
+- UC con Ruba
+- make query systems for GISAID and normal VIRUSURF
+
