@@ -190,6 +190,22 @@ class AAChange:
         'NUCLEOCAPSID': 'N',
         'MEMBRANE': 'M'
     }
+    @staticmethod
+    def entail_short_protein_name(name: str):
+        if 'SPIKE' in name:
+            return 'S'
+        elif 'NSP12' in name:
+            return 'NSP12'
+        elif 'NUCLEOCAPSID' in name:
+            return 'N'
+        elif 'NS3' in name:
+            return 'NS3'
+        elif 'NS8' in name:
+            return 'NS8'
+        elif 'ENVELOPE' in name:
+            return 'E'
+        else:
+            raise KeyError
 
     @staticmethod
     def from_parts(protein: str, ref: str, pos: Union[int, str], alt: str) -> Iterable:
@@ -212,9 +228,12 @@ class AAChange:
     def uniform(self):
         self.protein = self.protein.upper()
         # convert protein names
-        for old, new in AAChange.protein_name_replacements.items():
-            self.protein = self.protein.replace(old, new)
-        self.protein = self.protein.strip()
+        try:
+            self.protein = self.entail_short_protein_name(self.protein)
+        except KeyError:
+            for old, new in AAChange.protein_name_replacements.items():
+                self.protein = self.protein.replace(old, new)
+            self.protein = self.protein.strip()
 
         # map ORF1A/B to sub-proteins
         if self.protein == 'ORF1AB' or self.protein == 'ORF1A':

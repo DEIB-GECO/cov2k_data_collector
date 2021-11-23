@@ -117,14 +117,17 @@ pipeline = [{$addFields: {
   'org_2_aa_changes': 1,
   'org_2_nuc_changes': 1,
   'effects': 1
-}}, {$unionWith: {
-  /* Add those clusters that have been excluded at the beginning because not associated to any pangolin_id */
-  coll: 'variant',
-  pipeline: [
-    { $match: {"aliases.org": { $ne: 'pango'}} }
-  ]
-}}, {$out: {
- /* save */   // TODO rename this reference after test
- coll: 'variant'
-}}]
+}},
+/*
+  Add those clusters that have been excluded at the beginning because not associated to any pangolin_id
+
+   {$unionWith: {
+   coll: 'variant',
+   pipeline: [
+     { $match: {"aliases.org": { $ne: 'pango'}} }
+   ]
+}}, */
+  {$out:
+ /* save */
+      'variant'}]
 db.variant.aggregate(pipeline)

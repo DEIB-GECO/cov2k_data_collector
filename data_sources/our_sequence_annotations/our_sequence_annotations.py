@@ -91,4 +91,7 @@ def load(transformed_nuc_annotations: dict):
 if __name__ == '__main__':
     chdir(f"..{sep}..{sep}")
     transformed_annotations = transform()
-    load(transformed_annotations)
+    try:
+        load(transformed_annotations)
+    finally:
+        connection.close_conn()

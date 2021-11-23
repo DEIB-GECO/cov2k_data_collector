@@ -95,7 +95,7 @@ if __name__ == '__main__':
                             'publisher': '$_id.publisher'
                         }
                     }, {
-                        '$out': 'aggr_reference'
+                        '$out': 'evidence'
                     }
             ])
         finally:

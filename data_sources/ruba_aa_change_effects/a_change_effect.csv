@@ -1,0 +1,341 @@
+product;type;original;position;alternative;effect;level;method;uri;citation;type;publisher
+Spike (surface glycoprotein);SUB;E;484;K;risk_of_reinfection;higher;epidemiological;https://doi.org/10.3201/eid2705.210191;Nonaka et al. (2021);published;Emerging infectious diseases
+Spike (surface glycoprotein);SUB;D;614;G;viral_load;higher;experimental;https://doi.org/10.1038/s41586-020-2895-3;Plante et al. (2020);published;Nature
+NSP12 (RNA-dependent RNA polymerase);SUB;E;802;D;effectiveness_of_available_antiviral_drugs;lower;experimental;https://doi.org/10.1371/journal.ppat.1009929;Szemiel et al. (2021);published;PLoS pathogens
+NSP6;SUB;I;168;T;effectiveness_of_available_antiviral_drugs;null;experimental;https://doi.org/10.1371/journal.ppat.1009929;Szemiel et al. (2021);published;PLoS pathogens
+NSP12 (RNA-dependent RNA polymerase);SUB;D;484;Y;effectiveness_of_available_antiviral_drugs;lower;epidemiological;https://doi.org/10.1093/cid/ciaa1474;Martinoit et al. (2020);published;Clinical infectious diseases
+NSP12 (RNA-dependent RNA polymerase);SUB;V;557;L;effectiveness_of_available_antiviral_drugs;lower;computational;https://doi.org/10.1016/j.celrep.2020.107940;Pruijssers et al. (2020);published;Cell reports
+NSP12 (RNA-dependent RNA polymerase);SUB;V;557;L;effectiveness_of_available_antiviral_drugs;lower;experimental;https://doi.org/10.1074/jbc.AC120.015720;Tchesnokov et al. (2020);published;Journal of biological chemistry
+NSP12 (RNA-dependent RNA polymerase);SUB;E;802;A;effectiveness_of_available_antiviral_drugs;lower;experimental;https://doi.org/10.1371/journal.ppat.1009929;Szemiel et al. (2021);published;PLoS pathogens
+NSP12 (RNA-dependent RNA polymerase);SUB;F;480;L;effectiveness_of_available_antiviral_drugs;lower;computational;https://doi.org/10.1016/j.celrep.2020.107940;Pruijssers et al. (2020);published;Cell reports
+NSP12 (RNA-dependent RNA polymerase);SUB;S;861;G;effectiveness_of_available_antiviral_drugs;lower;experimental;https://doi.org/10.1074/jbc.AC120.015720;Tchesnokov et al. (2020);published;Journal of biological chemistry
+NSP12 (RNA-dependent RNA polymerase);SUB;S;861;A;effectiveness_of_available_antiviral_drugs;lower;experimental;https://doi.org/10.1074/jbc.AC120.015720;Tchesnokov et al. (2020);published;Journal of biological chemistry
+Spike (surface glycoprotein);SUB;L;452;R;binding_to_Abs;lower;computational;https://doi.org/10.3390/ijms222212114;Yang et al. (2021);published;International journal of molecular sciences
+Spike (surface glycoprotein);SUB;L;452;R;binding_to_host_receptor;higher;computational;https://doi.org/10.3390/ijms222212114;Yang et al. (2021);published;International journal of molecular sciences
+Spike (surface glycoprotein);SUB;Y;453;F;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jbc.2021.100536 ;Bayarri-Olmos et al. (2021);published;Journal of biological chemistry
+Spike (surface glycoprotein);SUB;Y;453;F;protein_stability;null;experimental;https://doi.org/10.1016/j.jbc.2021.100536 ;Bayarri-Olmos et al. (2021);published;Journal of biological chemistry
+Spike (surface glycoprotein);SUB;Y;453;F;sensitivity_to_convalescent_sera;null;experimental;https://doi.org/10.1016/j.jbc.2021.100536 ;Bayarri-Olmos et al. (2021);published;Journal of biological chemistry
+Spike (surface glycoprotein);SUB;Y;453;F;viral_transmission;higher;inferred;https://doi.org/10.1016/j.jbc.2021.100536 ;Bayarri-Olmos et al. (2021);published;Journal of biological chemistry
+Spike (surface glycoprotein);SUB;Y;453;F;sensitivity_to_neutralizing_mAbs;null;experimental;https://doi.org/10.1016/j.jbc.2021.100536 ;Bayarri-Olmos et al. (2021);published;Journal of biological chemistry
+NSP12 (RNA-dependent RNA polymerase);SUB;P;323;L;protein_flexibility;lower;computational;https://doi.org/10.7717/peerj.9492 ;Chand et al. (2020);published;PeerJ
+NSP12 (RNA-dependent RNA polymerase);SUB;A;185;V;protein_flexibility;lower;computational;https://doi.org/10.7717/peerj.9492 ;Chand et al. (2020);published;PeerJ
+NSP12 (RNA-dependent RNA polymerase);SUB;I;201;L;protein_flexibility;higher;computational;https://doi.org/10.7717/peerj.9492 ;Chand et al. (2020);published;PeerJ
+NSP12 (RNA-dependent RNA polymerase);SUB;A;185;V;protein_stability;higher;computational;https://doi.org/10.7717/peerj.9492 ;Chand et al. (2020);published;PeerJ
+NSP12 (RNA-dependent RNA polymerase);SUB;I;201;L;protein_stability;lower;computational;https://doi.org/10.7717/peerj.9492 ;Chand et al. (2020);published;PeerJ
+NSP12 (RNA-dependent RNA polymerase);SUB;P;323;L;protein_stability;higher;computational;https://doi.org/10.7717/peerj.9492 ;Chand et al. (2020);published;PeerJ
+Spike (surface glycoprotein);SUB;F;338;C;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;F;338;C;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;V;341;I;binding_to_host_receptor;lower;computational;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;A;344;S;binding_to_host_receptor;lower;computational;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;R;346;K;binding_to_host_receptor;higher;computational;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;F;347;N;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;F;347;N;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;A;348;T;binding_to_host_receptor;higher;computational;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;N;354;S;binding_to_host_receptor;higher;computational;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;D;364;Y;binding_to_host_receptor;higher;computational;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;D;364;Y;infectivity;higher;epidemiological;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;365;V;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;365;V;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;V;367;F;binding_to_host_receptor;higher;computational;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;V;367;F;infectivity;higher;epidemiological;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;V;367;F;viral_transmission;higher;inferred;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;F;400;C;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;F;400;V;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;F;400;C;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;F;400;V;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;F;400;A;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;F;400;A;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;R;403;S;binding_to_host_receptor;higher;computational;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;R;408;I;binding_to_host_receptor;higher;computational;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;K;417;N;binding_to_host_receptor;higher;computational;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;421;S;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;421;S;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;N;422;P;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;N;422;G;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;N;422;P;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;N;422;G;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;423;C;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;423;F;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;423;S;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;423;F;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;423;S;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;423;F;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;423;S;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;423;A;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;423;P;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;423;V;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;423;I;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;423;M;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;423;A;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;423;P;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;423;V;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;423;I;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;423;M;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;N;439;K;binding_to_host_receptor;higher;computational;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;N;439;K;infectivity;higher;epidemiological;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;N;439;K;viral_transmission;higher;inferred;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;K;444;R;binding_to_host_receptor;higher;computational;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;V;445;A;binding_to_host_receptor;higher;computational;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;L;452;R;binding_to_host_receptor;higher;computational;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;L;452;P;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;L;452;P;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;L;455;F;binding_to_host_receptor;lower;computational;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;K;458;N;binding_to_host_receptor;higher;computational;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;N;460;T;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;N;460;T;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;E;471;Q;binding_to_host_receptor;higher;computational;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;A;475;V;binding_to_host_receptor;lower;computational;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;G;476;S;binding_to_host_receptor;lower;computational;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;S;477;N;binding_to_host_receptor;higher;computational;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;S;477;N;infectivity;higher;epidemiological;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;S;477;N;viral_transmission;higher;inferred;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;T;478;I;binding_to_host_receptor;lower;computational;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;P;479;S;binding_to_host_receptor;lower;computational;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;V;483;A;infectivity;higher;epidemiological;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;V;483;A;viral_transmission;higher;inferred;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;E;484;D;binding_to_host_receptor;higher;computational;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;E;484;K;binding_to_host_receptor;higher;computational;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;E;484;Q;binding_to_host_receptor;lower;computational;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;489;H;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;489;D;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;489;F;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;489;C;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;489;N;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;489;H;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;489;H;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;489;D;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;489;F;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;489;C;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;489;N;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;489;G;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;489;K;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;489;Q;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;489;P;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;489;G;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;489;K;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;489;Q;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;489;P;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;F;490;S;binding_to_host_receptor;higher;computational;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;F;490;L;binding_to_host_receptor;higher;computational;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;P;491;R;binding_to_host_receptor;lower;computational;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;L;492;N;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;L;492;N;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Q;493;L;binding_to_host_receptor;lower;computational;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;495;N;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;495;N;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;495;R;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;495;Q;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;495;R;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;495;Q;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;T;500;N;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;T;500;N;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;N;501;S;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;N;501;S;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;N;501;V;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;N;501;V;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;505;H;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;505;H;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;505;G;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;Y;505;G;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;R;509;K;binding_to_host_receptor;higher;computational;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;V;511;E;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;V;511;E;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;V;511;Q;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;V;511;Q;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;V;512;L;infectivity;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;V;512;L;binding_to_host_receptor;higher;experimental;https://doi.org/10.1016/j.jmb.2020.07.009 ;Chen et al. (2020);published;Journal of molecular biology
+Spike (surface glycoprotein);SUB;D;614;G;infectivity;higher;inferred;https://doi.org/10.1021/acsmedchemlett.0c00410 ;Fern?ndez et al. (2020);published;ACS medicinal chemistry letters
+Spike (surface glycoprotein);SUB;D;614;G;protein_stability;higher;computational;https://doi.org/10.1021/acsmedchemlett.0c00410 ;Fern?ndez et al. (2020);published;ACS medicinal chemistry letters
+Spike (surface glycoprotein);SUB;N;501;Y;binding_to_host_receptor;higher;computational;https://doi.org/10.1126/science.abc4730 ;Gu et al. (2020);published;Science
+Spike (surface glycoprotein);SUB;N;501;Y;infectivity;higher;experimental;https://doi.org/10.1126/science.abc4730 ;Gu et al. (2020);published;Science
+Spike (surface glycoprotein);SUB;D;796;H;infectivity;lower;experimental;https://doi.org/10.1038/s41586-021-03291-y ;Kemp et al. (2021);published;Nature
+Spike (surface glycoprotein);SUB;D;796;H;sensitivity_to_convalescent_sera;lower;experimental;https://doi.org/10.1038/s41586-021-03291-y ;Kemp et al. (2021);published;Nature
+Spike (surface glycoprotein);SUB;D;796;H;sensitivity_to_neutralizing_mAbs;null;experimental;https://doi.org/10.1038/s41586-021-03291-y ;Kemp et al. (2021);published;Nature
+Spike (surface glycoprotein);SUB;D;614;G;viral_transmission;higher;inferred;https://doi.org/10.24171/j.phrp.2020.11.3.05 ;Kim et al. (2020);published;Osong public health res perspect
+Spike (surface glycoprotein);SUB;D;614;G;infectivity;higher;inferred;https://doi.org/10.24171/j.phrp.2020.11.3.05 ;Kim et al. (2020);published;Osong public health res perspect
+Spike (surface glycoprotein);SUB;N;122;Q;infectivity;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);DEL;Y;145;-;sensitivity_to_convalescent_sera;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;N;149;H;sensitivity_to_convalescent_sera;higher;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;N;149;Q;sensitivity_to_convalescent_sera;higher;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;N;165;Q;sensitivity_to_convalescent_sera;higher;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;N;165;Q;sensitivity_to_neutralizing_mAbs;higher;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;N;234;Q;sensitivity_to_neutralizing_mAbs;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;Q;239;K;infectivity;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;N;331;Q;sensitivity_to_convalescent_sera;higher;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;F;338;L;sensitivity_to_convalescent_sera;higher;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;V;341;I;infectivity;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;N;343;Q;infectivity;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;N;354;D;sensitivity_to_convalescent_sera;higher;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;D;364;Y;infectivity;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;V;367;F;sensitivity_to_convalescent_sera;higher;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;V;367;F;sensitivity_to_neutralizing_mAbs;higher;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;D;405;V;infectivity;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;Q;409;E;sensitivity_to_neutralizing_mAbs;higher;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;Q;414;P;infectivity;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;Q;414;E;sensitivity_to_convalescent_sera;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;Q;414;E;sensitivity_to_neutralizing_mAbs;higher;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;I;434;K;infectivity;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;S;438;F;infectivity;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;N;439;K;sensitivity_to_convalescent_sera;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;N;439;K;sensitivity_to_neutralizing_mAbs;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;G;446;V;sensitivity_to_convalescent_sera;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;L;452;R;sensitivity_to_neutralizing_mAbs;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;K;458;N;sensitivity_to_convalescent_sera;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;D;467;V;infectivity;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;I;468;F;sensitivity_to_convalescent_sera;higher;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;I;468;T;sensitivity_to_convalescent_sera;higher;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;I;468;F;sensitivity_to_neutralizing_mAbs;higher;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;I;468;T;sensitivity_to_neutralizing_mAbs;higher;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;I;472;V;sensitivity_to_convalescent_sera;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;A;475;V;sensitivity_to_convalescent_sera;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;A;475;V;sensitivity_to_neutralizing_mAbs;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;T;478;I;sensitivity_to_convalescent_sera;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;V;483;I;sensitivity_to_convalescent_sera;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;V;483;A;sensitivity_to_neutralizing_mAbs;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;F;490;L;sensitivity_to_convalescent_sera;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;F;490;L;sensitivity_to_neutralizing_mAbs;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;P;491;R;infectivity;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;V;503;F;infectivity;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;Y;508;H;sensitivity_to_neutralizing_mAbs;higher;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;Y;508;H;sensitivity_to_neutralizing_mAbs;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;R;509;K;infectivity;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;V;510;L;infectivity;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;H;519;P;sensitivity_to_convalescent_sera;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;P;521;S;infectivity;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;A;522;V;sensitivity_to_neutralizing_mAbs;higher;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;D;614;G;infectivity;higher;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;V;615;L;sensitivity_to_convalescent_sera;higher;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;N;709;Q;sensitivity_to_convalescent_sera;higher;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;N;709;Q;sensitivity_to_neutralizing_mAbs;higher;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;N;717;Q;infectivity;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;T;719;A;infectivity;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;N;801;Q;infectivity;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;A;831;V;sensitivity_to_convalescent_sera;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;A;831;V;sensitivity_to_neutralizing_mAbs;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;D;839;Y;infectivity;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;N;1074;Q;infectivity;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;N;1173;Q;sensitivity_to_convalescent_sera;higher;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+Spike (surface glycoprotein);SUB;P;1263;L;infectivity;lower;experimental;https://doi.org/10.1016/j.cell.2020.07.012 ;Li et al. (2020);published;Cell
+N (nucleocapsid phosphoprotein);SUB;A;55;S;protein_flexibility;lower;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;A;55;S;protein_stability;higher;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;E;62;V;protein_flexibility;higher;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;E;62;V;protein_stability;lower;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;P;67;T;protein_flexibility;higher;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;P;67;T;protein_stability;higher;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;D;81;Y;protein_flexibility;lower;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;D;81;Y;protein_stability;higher;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;D;103;Y;protein_flexibility;lower;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;D;103;Y;protein_stability;lower;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;A;119;S;protein_flexibility;lower;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;A;119;V;protein_flexibility;lower;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;A;119;V;protein_stability;higher;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;A;119;S;protein_stability;lower;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;P;122;L;protein_flexibility;lower;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;P;122;L;protein_stability;higher;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;D;128;Y;protein_flexibility;lower;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;D;128;Y;protein_stability;higher;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;L;139;F;protein_flexibility;lower;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;L;139;F;protein_stability;higher;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;D;144;Y;protein_flexibility;higher;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;D;144;Y;protein_stability;higher;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;A;152;S;protein_flexibility;lower;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;A;152;S;protein_stability;lower;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;A;156;S;protein_flexibility;lower;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;A;156;S;protein_stability;lower;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;L;161;F;protein_flexibility;lower;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;L;161;F;protein_stability;lower;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;P;168;S;protein_flexibility;higher;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;P;168;S;protein_stability;lower;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;R;203;K;protein_flexibility;lower;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;R;203;K;protein_stability;higher;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;G;204;R;protein_flexibility;lower;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;G;204;R;protein_stability;higher;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;A;252;S;protein_flexibility;lower;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;A;252;S;protein_stability;lower;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;Q;289;H;protein_flexibility;higher;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;Q;289;H;protein_stability;lower;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;I;292;T;protein_flexibility;higher;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;I;292;T;protein_stability;lower;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;H;300;Y;protein_flexibility;lower;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;H;300;Y;protein_stability;higher;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;T;325;I;protein_flexibility;lower;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;T;325;I;protein_stability;higher;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;S;327;L;protein_flexibility;lower;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;S;327;L;protein_stability;higher;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;T;334;I;protein_flexibility;lower;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;T;334;I;protein_stability;higher;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;D;340;N;protein_flexibility;lower;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;D;340;N;protein_stability;higher;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;P;344;S;protein_flexibility;lower;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;P;344;S;protein_stability;lower;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;D;348;H;protein_flexibility;lower;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;D;348;H;protein_stability;lower;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;T;362;I;protein_flexibility;higher;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;T;362;I;protein_stability;higher;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;P;364;L;protein_flexibility;higher;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;P;364;L;protein_stability;higher;computational;https://doi.org/10.1002/jmv.26626 ;Rahman et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;S;194;L;intraviral_protein_protein_interaction;higher;computational;https://doi.org/10.1002/jmv.26597 ;Wu et al. (2020);published;Journal of medical virology
+N (nucleocapsid phosphoprotein);SUB;S;194;L;intraviral_protein_protein_interaction;lower;computational;https://doi.org/10.1002/jmv.26597 ;Wu et al. (2020);published;Journal of medical virology
+NS3 (ORF3a protein);SUB;Q;57;H;intraviral_protein_protein_interaction;higher;computational;https://doi.org/10.1002/jmv.26597 ;Wu et al. (2020);published;Journal of medical virology
+NS3 (ORF3a protein);SUB;G;251;V;intraviral_protein_protein_interaction;lower;computational;https://doi.org/10.1002/jmv.26597 ;Wu et al. (2020);published;Journal of medical virology
+NS3 (ORF3a protein);SUB;Q;57;H;viral_transmission;higher;inferred;https://doi.org/10.1002/jmv.26597 ;Wu et al. (2020);published;Journal of medical virology
+Spike (surface glycoprotein);SUB;D;80;A;protein_stability;higher;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;D;215;G;protein_stability;higher;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;K;417;N;protein_stability;higher;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;K;417;T;protein_stability;lower;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;E;484;K;protein_stability;lower;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;N;501;Y;protein_stability;higher;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;A;570;D;protein_stability;higher;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;H;655;Y;protein_stability;higher;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;P;681;H;protein_stability;higher;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;T;716;I;protein_stability;higher;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;S;982;A;protein_stability;higher;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;T;1027;I;protein_stability;higher;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;D;1118;H;protein_stability;higher;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;S;477;N;protein_stability;higher;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;N;440;K;protein_stability;lower;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+NS8 (ORF8 protein);SUB;R;52;I;protein_stability;higher;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+NS8 (ORF8 protein);SUB;Y;73;C;protein_stability;lower;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+NS8 (ORF8 protein);SUB;E;92;K;protein_stability;lower;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+N (nucleocapsid phosphoprotein);SUB;D;3;L;protein_stability;lower;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+N (nucleocapsid phosphoprotein);SUB;T;205;I;protein_stability;higher;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+N (nucleocapsid phosphoprotein);SUB;S;235;F;protein_stability;higher;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+N (nucleocapsid phosphoprotein);SUB;P;80;R;protein_stability;higher;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+E (envelope protein);SUB;P;71;L;protein_stability;higher;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;D;80;A;protein_flexibility;lower;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;D;215;G;protein_flexibility;higher;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;K;417;N;protein_flexibility;higher;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;K;417;T;protein_flexibility;lower;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;E;484;K;protein_flexibility;lower;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;N;501;Y;protein_flexibility;lower;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;A;570;D;protein_flexibility;higher;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;H;655;Y;protein_flexibility;lower;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;P;681;H;protein_flexibility;higher;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;T;716;I;protein_flexibility;lower;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;S;982;A;protein_flexibility;higher;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;T;1027;I;protein_flexibility;lower;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;D;1118;H;protein_flexibility;higher;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;S;477;N;protein_flexibility;lower;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;N;440;K;protein_flexibility;higher;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+NS8 (ORF8 protein);SUB;R;52;I;protein_flexibility;higher;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+NS8 (ORF8 protein);SUB;Y;73;C;protein_flexibility;higher;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+NS8 (ORF8 protein);SUB;E;92;K;protein_flexibility;null;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+N (nucleocapsid phosphoprotein);SUB;D;3;L;protein_flexibility;lower;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+N (nucleocapsid phosphoprotein);SUB;T;205;I;protein_flexibility;higher;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+N (nucleocapsid phosphoprotein);SUB;S;235;F;protein_flexibility;higher;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+N (nucleocapsid phosphoprotein);SUB;P;80;R;protein_flexibility;lower;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+E (envelope protein);SUB;P;71;L;protein_flexibility;lower;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;K;417;N;binding_to_Abs;lower;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;E;484;K;binding_to_Abs;lower;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;N;501;Y;binding_to_Abs;lower;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;S;477;N;binding_to_Abs;lower;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;N;440;K;binding_to_Abs;lower;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;K;417;N;binding_to_host_receptor;null;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;E;484;K;binding_to_host_receptor;higher;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;N;501;Y;binding_to_host_receptor;higher;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;S;477;N;binding_to_host_receptor;higher;computational;https://doi.org/10.3390/v13030439 ;Singh et al. (2021);published;Viruses
+Spike (surface glycoprotein);SUB;S;477;G;binding_to_host_receptor;higher;computational;https://doi.org/10.1038/s41598-021-83761-5 ;Singh et al. (2021);published;Scientific reports
+Spike (surface glycoprotein);SUB;S;477;N;binding_to_host_receptor;higher;computational;https://doi.org/10.1038/s41598-021-83761-5 ;Singh et al. (2021);published;Scientific reports
+Spike (surface glycoprotein);SUB;Q;493;N;binding_to_host_receptor;lower;experimental;https://doi.org/10.1038/s41586-020-2179-y ;Shang et al. (2020) ;published;Nature
+Spike (surface glycoprotein);SUB;Q;493;Y;binding_to_host_receptor;lower;experimental;https://doi.org/10.1038/s41586-020-2179-y ;Shang et al. (2020) ;published;Nature
+Spike (surface glycoprotein);SUB;N;501;T;binding_to_host_receptor;lower;experimental;https://doi.org/10.1038/s41586-020-2179-y ;Shang et al. (2020) ;published;Nature

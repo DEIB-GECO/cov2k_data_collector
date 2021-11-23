@@ -9,7 +9,7 @@ USE_DB = 'COV2K'
 LOCAL_DB_CONNECTION_STRING = "mongodb://localhost:27017"
 GECO_DB_CONNECTION_STRING = "mongodb://localhost:23456/gcm_gisaid"
 MONGO_DB_CONNECTION_URI = LOCAL_DB_CONNECTION_STRING if USE_DB == 'COV2K' else GECO_DB_CONNECTION_STRING
-DB_NAME = 'cov2k-test-v2' if USE_DB == 'COV2K' else 'gcm_gisaid'
+DB_NAME = 'cov2k_final' if USE_DB == 'COV2K' else 'gcm_gisaid'
 
 _client: Optional[MongoClient] = None
 

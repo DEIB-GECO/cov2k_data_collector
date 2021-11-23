@@ -43,8 +43,8 @@ pipeline = [
             protein_name: "$protein_regions_of_described_proteins.protein_name",
             start_on_prot: "$protein_regions_of_described_proteins.start_on_prot",
             stop_on_prot: "$protein_regions_of_described_proteins.stop_on_prot",
-            description: "$protein_regions_of_described_proteins,description",
+            description: "$protein_regions_of_described_proteins.description",
             type: "$protein_regions_of_described_proteins.type"
         }
-    }, {$out: 'protein_region_fixed'}]
+    }, {$out: 'protein_region'}]
 db.protein_region.aggregate(pipeline)

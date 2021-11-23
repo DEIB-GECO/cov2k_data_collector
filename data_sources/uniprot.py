@@ -121,6 +121,8 @@ def load():
             protein_name, _type, category, description, begin, end, _ = line[:line.rindex("[")].split("\t")
             description = description if description else None
             _type = _type if _type else None
+            if _type in ["VARIANT", "MUTAGEN"]:
+                continue
             protein_name = protein_name if protein_name else None
             assert protein_name != None, f"Protein name is NULL in {line}"
             protein_name = protein_name.upper()

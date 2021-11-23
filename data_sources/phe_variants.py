@@ -1,3 +1,4 @@
+import os
 import re
 import zipfile
 from loguru import logger
@@ -21,7 +22,7 @@ import db_config.connection as connection
 # https://github.com/phe-genomics/variant_definitions/tree/main/variant_yaml
 # the following URL is to download the repo with wget, curl, etc...
 URL = "https://api.github.com/repos/phe-genomics/variant_definitions/zipball/"
-LOCAL_PATH = download_dir_for("phe") + "git_repo.zip"
+LOCAL_PATH = f'.{sep}generated{sep}phe{sep}git_repo.zip'
 
 
 def download_source_files() -> None:
@@ -276,6 +277,8 @@ def load(variants: List[db_schema.Variant], aa_changes: Set[db_schema.AAChange],
 
 if __name__ == '__main__':
     chdir(f"..{sep}")
+    if not os.path.exists(LOCAL_PATH):
+        os.makedirs(LOCAL_PATH, exist_ok=True)
     try:
         # example_file_url = "https://raw.githubusercontent.com/phe-genomics/variant_definitions/main/variant_yaml/animating-thermos.yml"
         # example_file = download_dir_for("phe") + "animating-thermos.yml"

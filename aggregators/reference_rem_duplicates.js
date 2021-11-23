@@ -17,6 +17,6 @@ pipeline = [
         uri: "$_id.uri",
         publisher: "$_id.publisher"
     } },
-    {$out: "aggr_reference"}    // TODO rename this reference after test
+    {$out: "evidence"}
 ]
 db.reference.aggregate(pipeline)
