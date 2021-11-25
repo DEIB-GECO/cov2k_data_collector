@@ -239,6 +239,9 @@ def recognize_organization(variant_name_string, fallback: str = None) -> str:
             return test_class.organization
     if fallback:
         return fallback
+    else:
+        raise ValueError(f"Unable to recognize the organization to which {variant_name_string} belongs to while "
+                         f"no fallback value provided.")
 
 
 if __name__ == '__main__':

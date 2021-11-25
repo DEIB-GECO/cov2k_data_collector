@@ -181,12 +181,14 @@ class Structure:
 
 
 class ProteinRegion:
-    def __init__(self, protein_name: str, start_on_prot: int, stop_on_prot: int, description: str = None, _type: str = None):
+    def __init__(self, protein_name: str, start_on_prot: int, stop_on_prot: int, description: str = None
+                 , _type: str = None, category: str = None):
         self.protein_name: str = protein_name
         self.start_on_prot: int = start_on_prot
         self.stop_on_prot: int = stop_on_prot
         self.description: str = description
         self.type: str = _type
+        self.category: str = category
 
     @classmethod
     def db(cls):

@@ -43,7 +43,7 @@ def transform(one_effect: Tuple[str, Tuple[str, str, str], Tuple[str, str, str, 
 def load(row: Tuple[str, Tuple[Tuple[str]], Tuple[Tuple[str]]]):
     pango_id, (effect_type, eff_level, eff_method), (evidence_citation, evidence_type,
                                                      evidence_uri, evidence_publisher) = row
-    variant_org = data_validators.new_variant.recognize_organization(pango_id, "pango")
+    variant_org = data_validators.new_variant.recognize_organization(pango_id)
     try:
         variant = Variant(
             aliases=[Variant.Name(org=variant_org, name=pango_id, v_class=None)]

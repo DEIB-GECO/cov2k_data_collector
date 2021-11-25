@@ -17,6 +17,13 @@ class Change:
         self.alt: str = alt
         self.optional: bool = False
         self.uniform()
+        self.length = max(len(self.alt), len(self.ref))
+        if '-' in self.alt or len(self.ref) > len(self.alt):
+            self._type = ChangeType.DEL
+        elif '' == self.ref or len(self.ref) < len(self.alt):
+            self._type = ChangeType.INS
+        else:
+            self._type = ChangeType.SUB
 
     # shared objects
     ref_regex = re.compile(r'[a-zA-Z\-\*]*')
@@ -94,23 +101,15 @@ class Change:
         return self.ref + str(self.pos) + self.alt
 
     def to_db_obj(self) -> db_schema.NUCChange:
-        res = db_schema.NUCChange(
+        return db_schema.NUCChange(
             self.get_encoded_string(),
             self.ref,
             self.pos,
             self.alt,
+            self._type,
+            self.length,
             is_opt=self.optional
         )
-        if '-' == self.alt:
-            res.type = ChangeType.DEL
-            res.length = len(self.ref)
-        elif '' == self.ref:
-            res.type = ChangeType.INS
-            res.length = len(self.alt)
-        else:
-            res.type = ChangeType.SUB
-            res.length = len(self.alt)
-        return res
 
 
 class AAChange:
@@ -128,6 +127,13 @@ class AAChange:
         self.alt: str = change.alt
         self.optional: bool = change.optional
         self.uniform()
+        self.length = max(len(self.alt), len(self.ref))
+        if '-' in self.alt or len(self.ref) > len(self.alt):
+            self._type = ChangeType.DEL
+        elif '' == self.ref or len(self.ref) < len(self.alt):
+            self._type = ChangeType.INS
+        else:
+            self._type = ChangeType.SUB
 
     # map for translating AA residue names and special values (e.g. 'STOP') to single letter codes or symbols.
     # noinspection SpellCheckingInspection
@@ -328,21 +334,13 @@ class AAChange:
         return self.protein + ":" + self.ref + str(self.pos) + self.alt
 
     def to_db_obj(self) -> db_schema.AAChange:
-        res = db_schema.AAChange(
+        return db_schema.AAChange(
             self.get_encoded_string(),
             self.protein,
             self.ref,
             self.pos,
             self.alt,
+            self._type,
+            self.length,
             is_opt=self.optional
         )
-        if '-' == self.alt:
-            res.type = ChangeType.DEL
-            res.length = len(self.ref)
-        elif '' == self.ref:
-            res.type = ChangeType.INS
-            res.length = len(self.alt)
-        else:
-            res.type = ChangeType.SUB
-            res.length = len(self.alt)
-        return res

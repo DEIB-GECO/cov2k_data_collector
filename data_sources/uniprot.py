@@ -126,7 +126,7 @@ def load():
             protein_name = protein_name if protein_name else None
             assert protein_name != None, f"Protein name is NULL in {line}"
             protein_name = protein_name.upper()
-            protein_regions.append(ProteinRegion(protein_name, begin, end, description, _type))
+            protein_regions.append(ProteinRegion(protein_name, begin, end, description, _type, category))
     for p in protein_regions:
         print(vars(p))
     ProteinRegion.db().insert_many(map(vars, protein_regions))
