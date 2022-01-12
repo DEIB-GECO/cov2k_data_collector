@@ -31,11 +31,11 @@ def transform() -> Iterable[Tuple[Tuple[db_schema.Effect], Tuple[db_schema.Refer
         output_effects = set()
         for eff in input_effects:
             if re.fullmatch(re_mab, eff):
-                output_effects.add("sensitivity to neutralizing mAbs")
+                output_effects.add("sensitivity_to_neutralizing_mabs")
             elif re.fullmatch(re_plasma, eff):
-                output_effects.add("sensitivity to convalescent sera")
+                output_effects.add("sensitivity_to_convalescent_sera")
             elif re.fullmatch(re_vaccine, eff):
-                output_effects.add("sensitivity to vaccine sera")
+                output_effects.add("sensitivity_to_vaccine_sera")
             else:
                 logger.warning(f"new effect of type {eff} not recognized")
 
@@ -59,10 +59,7 @@ def load(effects_w_references: Iterable[Tuple[Iterable[db_schema.Effect], Iterab
         db_schema.Reference.db().insert_many(map(vars, their_references), ordered=False)
 
 
-if __name__ == '__main__':
-    chdir(f"..{sep}..")
-    print(f"current work dir {os.path.abspath('.')}")
-
+def run():
     # TODO si può arricchire il record di un reference con l'API https://api.crossref.org/swagger-ui/index.html
     #  o il suo port per python
     try:
@@ -104,8 +101,7 @@ if __name__ == '__main__':
         logger.exception("")
 
 
-
-
-
-
-
+if __name__ == '__main__':
+    chdir(f"..{sep}..")
+    print(f"current work dir {os.path.abspath('.')}")
+    run()

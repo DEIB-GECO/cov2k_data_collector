@@ -1,4 +1,6 @@
 import re
+from loguru import logger
+
 from data_validators.vocabulary import Organization
 
 
@@ -237,11 +239,9 @@ def recognize_organization(variant_name_string, fallback: str = None) -> str:
         match = re.fullmatch(test_class.regex, variant_name_string)
         if match:
             return test_class.organization
-    if fallback:
-        return fallback
-    else:
-        raise ValueError(f"Unable to recognize the organization to which {variant_name_string} belongs to while "
-                         f"no fallback value provided.")
+    logger.warning(f"Unable to recognize the organization to which {variant_name_string} belongs to while "
+                   f"no fallback value provided.")
+    return fallback
 
 
 if __name__ == '__main__':

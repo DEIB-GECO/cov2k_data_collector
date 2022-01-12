@@ -67,6 +67,7 @@ def transform():
                 length = end - begin
                 length += 1 if ";" not in begin_end else 2
                 assert length % 3 == 0, "Protein length not multiple of 3!"
+
                 protein_characterization = Structure.ProteinCharacterization(
                     protein_name=translate_protein_name(protein),
                     aa_length=int(length/3),
@@ -88,10 +89,14 @@ def load(transformed_nuc_annotations: dict):
         Structure.db().insert_one(vars(nuc_annotation))
 
 
-if __name__ == '__main__':
-    chdir(f"..{sep}..{sep}")
+def run():
     transformed_annotations = transform()
     try:
         load(transformed_annotations)
     finally:
         connection.close_conn()
+
+
+if __name__ == '__main__':
+    chdir(f"..{sep}..{sep}")
+    run()

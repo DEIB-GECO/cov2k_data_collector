@@ -1,6 +1,7 @@
 import re
 import warnings
 from data_validators.vocabulary import ChangeType
+from data_validators.protein import convert_protein
 import db_config.mongodb_model as db_schema
 from typing import Iterable, Union
 
@@ -196,22 +197,55 @@ class AAChange:
         'NUCLEOCAPSID': 'N',
         'MEMBRANE': 'M'
     }
+    regex_orf_non_polyprot = re.compile(r'(ORF|NS)((1\d)|([2-9]+))(\w?)')
     @staticmethod
     def entail_short_protein_name(name: str):
+        name = name.upper()
         if 'SPIKE' in name:
             return 'S'
+        elif 'NSP16' in name:
+            return 'NSP16'
+        elif 'NSP15' in name:
+            return 'NSP15'
+        elif 'NSP14' in name:
+            return 'NSP14'
+        elif 'NSP13' in name:
+            return 'NSP13'
         elif 'NSP12' in name:
             return 'NSP12'
+        elif 'NSP11' in name:
+            return 'NSP11'
+        elif 'NSP10' in name:
+            return 'NSP10'
+        elif 'NSP9' in name:
+            return 'NSP9'
+        elif 'NSP8' in name:
+            return 'NSP8'
+        elif 'NSP7' in name:
+            return 'NSP7'
+        elif 'NSP6' in name:
+            return 'NSP6'
+        elif 'NSP5' in name:
+            return 'NSP5'
+        elif 'NSP4' in name:
+            return 'NSP4'
+        elif 'NSP3' in name:
+            return 'NSP3'
+        elif 'NSP2' in name:
+            return 'NSP2'
+        elif 'NSP1' in name:
+            return 'NSP1'
         elif 'NUCLEOCAPSID' in name:
             return 'N'
-        elif 'NS3' in name:
-            return 'NS3'
-        elif 'NS8' in name:
-            return 'NS8'
         elif 'ENVELOPE' in name:
             return 'E'
         else:
-            raise KeyError
+            regex_match = re.match(AAChange.regex_orf_non_polyprot, name)
+            if regex_match:
+                number, letter = regex_match.groups()[1::3]
+                return 'NS'+number+letter
+            else:
+                raise KeyError
 
     @staticmethod
     def from_parts(protein: str, ref: str, pos: Union[int, str], alt: str) -> Iterable:
@@ -232,81 +266,83 @@ class AAChange:
             yield AAChange(protein, change)
 
     def uniform(self):
-        self.protein = self.protein.upper()
-        # convert protein names
-        try:
-            self.protein = self.entail_short_protein_name(self.protein)
-        except KeyError:
-            for old, new in AAChange.protein_name_replacements.items():
-                self.protein = self.protein.replace(old, new)
-            self.protein = self.protein.strip()
+        # self.protein = self.protein.upper()
+        # # convert protein names
+        # try:
+        #     self.protein = self.entail_short_protein_name(self.protein)
+        # except KeyError:
+        #     for old, new in AAChange.protein_name_replacements.items():
+        #         self.protein = self.protein.replace(old, new)
+        #     self.protein = self.protein.strip()
+        #
+        # # map ORF1A/B to sub-proteins
+        # if self.protein == 'ORF1AB' or self.protein == 'ORF1A':
+        #     if 1 <= self.pos <= 180:
+        #         self.protein = "NSP1"
+        #     elif 181 <= self.pos <= 818:
+        #         self.pos = self.pos - 181 + 1
+        #         self.protein = "NSP2"
+        #     elif 819 <= self.pos <= 2763:
+        #         self.pos = self.pos - 819 + 1
+        #         self.protein = "NSP3"
+        #     elif 2764 <= self.pos <= 3263:
+        #         self.pos = self.pos - 2764 + 1
+        #         self.protein = "NSP4"
+        #     elif 3264 <= self.pos <= 3569:
+        #         self.pos = self.pos - 3264 + 1
+        #         self.protein = "NSP5"
+        #     elif 3570 <= self.pos <= 3859:
+        #         self.pos = self.pos - 3570 + 1
+        #         self.protein = "NSP6"
+        #     elif 3860 <= self.pos <= 3942:
+        #         self.pos = self.pos - 3860 + 1
+        #         self.protein = "NSP7"
+        #     elif 3943 <= self.pos <= 4140:
+        #         self.pos = self.pos - 3943 + 1
+        #         self.protein = "NSP8"
+        #     elif 4141 <= self.pos <= 4253:
+        #         self.pos = self.pos - 4141 + 1
+        #         self.protein = "NSP9"
+        #     elif 4254 <= self.pos <= 4392:
+        #         self.pos = self.pos - 4254 + 1
+        #         self.protein = "NSP10"
+        #     elif 4393 <= self.pos <= 5324:
+        #         self.pos = self.pos - 4393 + 1
+        #         self.protein = "NSP12"
+        #     elif 5325 <= self.pos <= 5925:
+        #         self.pos = self.pos - 5325 + 1
+        #         self.protein = "NSP13"
+        #     elif 5926 <= self.pos <= 6452:
+        #         self.pos = self.pos - 5926 + 1
+        #         self.protein = "NSP14"
+        #     elif 6453 <= self.pos <= 6798:
+        #         self.pos = self.pos - 6453 + 1
+        #         self.protein = "NSP15"
+        #     elif 6799 <= self.pos <= 7096:
+        #         self.pos = self.pos - 6799 + 1
+        #         self.protein = "NSP16"
+        #     else:
+        #         warnings.warn(f"AA change with protein {self.protein} and pos {self.pos} doesn't resolve to any NSP")
+        # elif self.protein == 'ORF1B':
+        #     if 1 <= self.pos <= 923:  # 1 -> 923
+        #         self.pos = self.pos + 9
+        #         self.protein = "NSP12"
+        #     elif 924 <= self.pos <= 1524:  # 924 -> 1524
+        #         self.pos = self.pos - 924 + 1
+        #         self.protein = "NSP13"
+        #     elif 1525 <= self.pos <= 2051:  # 1525 -> 2051
+        #         self.pos = self.pos - 1525 + 1
+        #         self.protein = "NSP14"
+        #     elif 2052 <= self.pos <= 2397:  # 2052 ->2397
+        #         self.pos = self.pos - 2052 + 1
+        #         self.protein = "NSP15"
+        #     elif 2398 <= self.pos <= 2695:  # 2398 -> 2695
+        #         self.pos = self.pos - 2398 + 1
+        #         self.protein = "NSP16"
+        #     else:
+        #         warnings.warn(f"AA change with protein {self.protein} and pos {self.pos} doesn't resolve to any NSP")
 
-        # map ORF1A/B to sub-proteins
-        if self.protein == 'ORF1AB' or self.protein == 'ORF1A':
-            if 1 <= self.pos <= 180:
-                self.protein = "NSP1"
-            elif 181 <= self.pos <= 818:
-                self.pos = self.pos - 181 + 1
-                self.protein = "NSP2"
-            elif 819 <= self.pos <= 2763:
-                self.pos = self.pos - 819 + 1
-                self.protein = "NSP3"
-            elif 2764 <= self.pos <= 3263:
-                self.pos = self.pos - 2764 + 1
-                self.protein = "NSP4"
-            elif 3264 <= self.pos <= 3569:
-                self.pos = self.pos - 3264 + 1
-                self.protein = "NSP5"
-            elif 3570 <= self.pos <= 3859:
-                self.pos = self.pos - 3570 + 1
-                self.protein = "NSP6"
-            elif 3860 <= self.pos <= 3942:
-                self.pos = self.pos - 3860 + 1
-                self.protein = "NSP7"
-            elif 3943 <= self.pos <= 4140:
-                self.pos = self.pos - 3943 + 1
-                self.protein = "NSP8"
-            elif 4141 <= self.pos <= 4253:
-                self.pos = self.pos - 4141 + 1
-                self.protein = "NSP9"
-            elif 4254 <= self.pos <= 4392:
-                self.pos = self.pos - 4254 + 1
-                self.protein = "NSP10"
-            elif 4393 <= self.pos <= 5324:
-                self.pos = self.pos - 4393 + 1
-                self.protein = "NSP12"
-            elif 5325 <= self.pos <= 5925:
-                self.pos = self.pos - 5325 + 1
-                self.protein = "NSP13"
-            elif 5926 <= self.pos <= 6452:
-                self.pos = self.pos - 5926 + 1
-                self.protein = "NSP14"
-            elif 6453 <= self.pos <= 6798:
-                self.pos = self.pos - 6453 + 1
-                self.protein = "NSP15"
-            elif 6799 <= self.pos <= 7096:
-                self.pos = self.pos - 6799 + 1
-                self.protein = "NSP16"
-            else:
-                warnings.warn(f"AA change with protein {self.protein} and pos {self.pos} doesn't resolve to any NSP")
-        elif self.protein == 'ORF1B':
-            if 1 <= self.pos <= 923:  # 1 -> 923
-                self.pos = self.pos + 9
-                self.protein = "NSP12"
-            elif 924 <= self.pos <= 1524:  # 924 -> 1524
-                self.pos = self.pos - 924 + 1
-                self.protein = "NSP13"
-            elif 1525 <= self.pos <= 2051:  # 1525 -> 2051
-                self.pos = self.pos - 1525 + 1
-                self.protein = "NSP14"
-            elif 2052 <= self.pos <= 2397:  # 2052 ->2397
-                self.pos = self.pos - 2052 + 1
-                self.protein = "NSP15"
-            elif 2398 <= self.pos <= 2695:  # 2398 -> 2695
-                self.pos = self.pos - 2398 + 1
-                self.protein = "NSP16"
-            else:
-                warnings.warn(f"AA change with protein {self.protein} and pos {self.pos} doesn't resolve to any NSP")
+        self.protein, self.pos, _ = convert_protein(self.protein, self.pos)
 
         # substitute special characters in residues' names (e.g. STOP => '*')
         for old, new in self.long_residues_map.items():

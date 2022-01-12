@@ -86,8 +86,7 @@ def load(tuples):
         db_model.Reference.db().insert_one(vars(evidence))
 
 
-if __name__ == '__main__':
-    chdir(f"..{sep}..{sep}")
+def run():
     try:
         extracted = list(extract(FILE_PATH_EFFECT_SINGLE_AA_CHANGE))
         transformed = [transform_tuple(e) for e in extracted]
@@ -107,4 +106,9 @@ if __name__ == '__main__':
             connection.close_conn()
     except:
         logger.exception("")
+
+
+if __name__ == '__main__':
+    chdir(f"..{sep}..{sep}")
+    run()
 

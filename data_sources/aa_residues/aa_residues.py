@@ -101,8 +101,7 @@ def load(aa_residues: Iterable[Tuple]):
     AAResidue.db().insert_many(map(vars, db_objects))
 
 
-if __name__ == "__main__":
-    chdir(f"..{sep}..{sep}")
+def run():
     aa_residues = list(transform())
     grantham_dist_for_residues = transform_grantham_dist()
     aa_residues = [(*aa_prop, grantham_dist_for_residues[aa_prop[0]]) for aa_prop in aa_residues]
@@ -112,3 +111,6 @@ if __name__ == "__main__":
     finally:
         close_conn()
 
+if __name__ == "__main__":
+    chdir(f"..{sep}..{sep}")
+    run()

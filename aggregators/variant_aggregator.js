@@ -7,8 +7,8 @@ pipeline = [{$addFields: {
   /* Take note of the _id of this cluster */
   cluster_id: '$_id'
 }}, {$match: {
-  /* Consider only clusters having at least one pango id, then (through project,unwind,project,match) pivot the data structure so to have each pangolin_id referencing a cluster_id */
-  'aliases.org': 'pango'
+  /* Consider only clusters having at least one PANGO id, then (through project,unwind,project,match) pivot the data structure so to have each pangolin_id referencing a cluster_id */
+  'aliases.org': 'PANGO'
 }}, {$project: {
   /* the two following projects drop the fields that are useless for creating the new groups (now we need just aliases and cluster_id; we'll get the rest later) */
   cluster_id: 1,
@@ -22,7 +22,7 @@ pipeline = [{$addFields: {
   cluster_id: 1,
   _id: 0
 }}, {$match: {
-  'org': 'pango'
+  'org': 'PANGO'
 }}, {$group: {
   /* group by pangolin_id and merge their cluster_id */
   _id: '$name',
@@ -105,7 +105,7 @@ pipeline = [{$addFields: {
       cond: {
         $not: {
           $and: [
-            {$eq: ['$$x.org', 'pango']},
+            {$eq: ['$$x.org', 'PANGO']},
             {$not: {
               $eq: ['$$x.name', '$_id']
             }}
@@ -124,7 +124,7 @@ pipeline = [{$addFields: {
    {$unionWith: {
    coll: 'variant',
    pipeline: [
-     { $match: {"aliases.org": { $ne: 'pango'}} }
+     { $match: {"aliases.org": { $ne: 'PANGO'}} }
    ]
 }}, */
   {$out:

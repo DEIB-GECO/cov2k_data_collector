@@ -246,12 +246,12 @@ def transform(parsed_variants: Collection[SourceVariant]) -> Tuple[List, Set, Se
         # assign VOC/VUI
         for x in aliases:
             if x.org == Organization.PHE:
-                if x.name.startswith("VUI"):
+                if x.name.upper().startswith("VUI"):
                     x.v_class = "VUI"
-                elif x.name.startswith("VOC"):
+                elif x.name.upper().startswith("VOC"):
                     x.v_class = "VOC"
                 else:
-                    raise AssertionError(f"Cannot assign variant calss to phe variant {x.name}")
+                    raise AssertionError(f"Cannot assign variant class to phe variant {x.name}")
         # create AA characterization
         aa_v_characterization = db_schema.Variant.Characterization(
             Organization.PHE,
@@ -275,8 +275,7 @@ def load(variants: List[db_schema.Variant], aa_changes: Set[db_schema.AAChange],
     db_schema.NUCChange.db().insert_many(map(vars, nuc_changes))
 
 
-if __name__ == '__main__':
-    chdir(f"..{sep}")
+def run():
     if not os.path.exists(LOCAL_PATH):
         os.makedirs(LOCAL_PATH, exist_ok=True)
     try:
@@ -354,3 +353,6 @@ if __name__ == '__main__':
         logger.exception("")
 
 
+if __name__ == '__main__':
+    chdir(f"..{sep}")
+    run()

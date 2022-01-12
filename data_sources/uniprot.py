@@ -2,9 +2,13 @@ import requests as requests
 import pandas as pd
 from os.path import sep
 from os import chdir
+
+from loguru import logger
+
 import db_config.mongodb_model as db_schema
 from db_config.mongodb_model import ProteinRegion
 import db_config.connection as connection
+from data_validators.protein import convert_protein
 
 download_location = f".{sep}generated{sep}uniprot{sep}original_protein_annotations.csv"
 
@@ -125,17 +129,21 @@ def load():
                 continue
             protein_name = protein_name if protein_name else None
             assert protein_name != None, f"Protein name is NULL in {line}"
-            protein_name = protein_name.upper()
+            protein_name, begin, end = convert_protein(protein_name, int(begin), int(end))
             protein_regions.append(ProteinRegion(protein_name, begin, end, description, _type, category))
     for p in protein_regions:
         print(vars(p))
     ProteinRegion.db().insert_many(map(vars, protein_regions))
 
 
-if __name__ == '__main__':
-    chdir(f"..{sep}")   # move to root dir
+def run():
     # download_annotation_file()
     try:
         load()
     finally:
         connection.close_conn()
+
+
+if __name__ == '__main__':
+    chdir(f"..{sep}")   # move to root dir
+    run()

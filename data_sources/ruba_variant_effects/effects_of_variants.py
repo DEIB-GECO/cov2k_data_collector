@@ -22,8 +22,9 @@ def extract():
                 _, pango_id, \
                 effect_type, eff_level, eff_method, \
                 evidence_citation, evidence_publisher, evidence_type, evidence_uri, _ = l.rstrip().split(";")
-                yield pango_id, (effect_type, eff_level, eff_method), (evidence_citation, evidence_type,
-                                                                       evidence_uri, evidence_publisher)
+                for single_pango_id in pango_id.split("/"):
+                    yield single_pango_id, (effect_type, eff_level, eff_method), (evidence_citation, evidence_type,
+                                                                           evidence_uri, evidence_publisher)
             except ValueError:
                 logger.exception(f"Error in line {line_idx}: {l}")
                 errors_found = True
@@ -67,11 +68,15 @@ def load(row: Tuple[str, Tuple[Tuple[str]], Tuple[Tuple[str]]]):
         raise
 
 
-if __name__ == '__main__':
-    chdir(f"..{sep}..{sep}")
+def run():
     try:
         for item in extract():
             item = transform(item)
             load(item)
     finally:
         connection.close_conn()
+
+
+if __name__ == '__main__':
+    chdir(f"..{sep}..{sep}")
+    run()

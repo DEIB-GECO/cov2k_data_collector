@@ -38,13 +38,13 @@ class Variant:
 
     class Name:
         def __init__(self, org=None, name=None, v_class=None):
-            self.org: Optional[str] = org
-            self.name: Optional[str] = name
-            self.v_class: Optional[str] = v_class
+            self.org: Optional[str] = org.upper() if org else None
+            self.name: Optional[str] = name.upper() if name else None
+            self.v_class: Optional[str] = v_class.upper() if v_class else None
 
     class Characterization:
         def __init__(self, org=None, changes=None):
-            self.org: Optional[str] = org
+            self.org: Optional[str] = org.upper() if org else None
             self.changes: Optional[Collection[str]] = changes
 
     def set_aliases(self, coll: Collection[Name]):
@@ -91,12 +91,12 @@ class Organization:
 
 class NUCChange:
     def __init__(self, change_id=None, ref=None, pos=None, alt=None, _type=None, length=None, is_opt=None):
-        self.change_id: Optional[str] = change_id
-        self.ref: Optional[str] = ref
-        self.pos: Optional[int] = pos
-        self.alt: Optional[str] = alt
-        self.type: Optional[str] = _type
-        self.length: Optional[int] = length
+        self.change_id: Optional[str] = change_id.upper()
+        self.ref: Optional[str] = ref.upper()
+        self.pos: Optional[int] = int(pos)
+        self.alt: Optional[str] = alt.upper()
+        self.type: Optional[str] = _type.upper()
+        self.length: Optional[int] = int(length)
         self.is_optional: Optional[bool] = is_opt
 
     @classmethod
@@ -106,13 +106,13 @@ class NUCChange:
 
 class AAChange:
     def __init__(self, change_id=None, protein=None, ref=None, pos=None, alt=None, _type=None, length=None, is_opt=None):
-        self.change_id: Optional[str] = change_id
-        self.protein: Optional[str] = protein
-        self.ref: Optional[str] = ref
-        self.pos: Optional[int] = pos
-        self.alt: Optional[str] = alt
-        self.type: Optional[str] = _type
-        self.length: Optional[int] = length
+        self.change_id: Optional[str] = change_id.upper()
+        self.protein: Optional[str] = protein.upper()
+        self.ref: Optional[str] = ref.upper()
+        self.pos: Optional[int] = int(pos)
+        self.alt: Optional[str] = alt.upper()
+        self.type: Optional[str] = _type.upper()
+        self.length: Optional[int] = int(length)
         self.is_optional: Optional[bool] = is_opt
 
     @classmethod
@@ -126,6 +126,12 @@ class Effect:
         self.lv: Optional[str] = lv
         self.method: Optional[str] = method
         self.aa_changes: Optional[Collection[str]] = aa_changes if aa_changes else []
+        self.uniform()
+
+    def uniform(self):
+        self.type = self.type.lower().replace('_', ' ') if self.type else None
+        self.lv = self.lv.lower().replace('_', ' ') if self.lv else None
+        self.method = self.method.lower().replace('_', ' ') if self.method else None
 
     @classmethod
     def db(cls):
@@ -140,6 +146,12 @@ class Reference:
         self.uri: Optional[str] = uri
         self.publisher: Optional[str] = publisher
 
+    def uniform(self):
+        self.citation = self.citation.lower() if self.citation else None
+        self.type = self.type.lower() if self.type else None
+        self.uri = self.uri if self.uri else None
+        self.publisher = self.publisher.lower() if self.publisher else None
+
     @classmethod
     def db(cls):
         return connection.open_conn()[COLL_REFERENCE]
@@ -148,18 +160,18 @@ class Reference:
 class Structure:
     def __init__(self, annotation_id: str, start_on_ref: int = None, stop_on_ref: int = None,
                  protein_characterization=None):
-        self.annotation_id: str = annotation_id
-        self.start_on_ref: Optional[int] = start_on_ref
-        self.stop_on_ref: Optional[int] = stop_on_ref
+        self.annotation_id: str = annotation_id.upper() if annotation_id else None
+        self.start_on_ref: Optional[int] = int(start_on_ref) if start_on_ref is not None else None
+        self.stop_on_ref: Optional[int] = int(stop_on_ref) if stop_on_ref is not None else None
         self.protein_characterization: Optional[List[Structure.ProteinCharacterization]] = None
 
         self.set_protein_characterization(protein_characterization)
 
     class ProteinCharacterization:
         def __init__(self, protein_name: str, aa_length: int = None, aa_sequence: str = None):
-            self.protein_name = protein_name
-            self.aa_length: Optional[int] = aa_length
-            self.aa_sequence: Optional[str] = aa_sequence
+            self.protein_name = protein_name.upper() if protein_name else None
+            self.aa_length: Optional[int] = int(aa_length) if aa_length is not None else None
+            self.aa_sequence: Optional[str] = aa_sequence.upper() if aa_sequence else None
 
     def set_protein_characterization(self, coll: Collection[ProteinCharacterization]):
         if coll:
@@ -183,12 +195,12 @@ class Structure:
 class ProteinRegion:
     def __init__(self, protein_name: str, start_on_prot: int, stop_on_prot: int, description: str = None
                  , _type: str = None, category: str = None):
-        self.protein_name: str = protein_name
-        self.start_on_prot: int = start_on_prot
-        self.stop_on_prot: int = stop_on_prot
-        self.description: str = description
-        self.type: str = _type
-        self.category: str = category
+        self.protein_name: str = protein_name.upper() if protein_name else None
+        self.start_on_prot: int = int(start_on_prot) if start_on_prot is not None else None
+        self.stop_on_prot: int = int(stop_on_prot) if stop_on_prot is not None else None
+        self.description: str = description.lower() if description else None
+        self.type: str = _type.lower() if _type else None
+        self.category: str = category.lower() if category else None
 
     @classmethod
     def db(cls):
@@ -197,17 +209,17 @@ class ProteinRegion:
 
 class AAResidue:
     def __init__(self, args):
-        self.residue: str = args[0]
-        self.molecular_weight: int = args[1]
-        self.isoelectric_point: float = args[2]
-        self.hydrophobicity: float = args[3]
-        self.potential_side_chain_h_bonds: int = args[4]
-        self.polarity: str = args[5]
-        self.r_group_structure: str = args[6]
-        self.charge: Optional[str] = args[7]
-        self.essentiality: str = args[8]
-        self.side_chain_flexibility: str = args[9]
-        self.chemical_group_in_the_side_chain: str = args[10]
+        self.residue: str = args[0].upper()
+        self.molecular_weight: int = int(args[1]) if args[1] is not None else None
+        self.isoelectric_point: float = float(args[2]) if args[2] is not None else None
+        self.hydrophobicity: float = float(args[3]) if args[3] is not None else None
+        self.potential_side_chain_h_bonds: int = int(args[4]) if args[4] is not None else None
+        self.polarity: str = args[5].lower() if args[5] else None
+        self.r_group_structure: str = args[6].lower() if args[6] else None
+        self.charge: Optional[str] = args[7].lower() if args[7] else None
+        self.essentiality: str = args[8].lower() if args[8] else None
+        self.side_chain_flexibility: str = args[9].lower() if args[9] else None
+        self.chemical_group_in_the_side_chain: str = args[10].lower() if args[10] else None
         self.grantham_distance: Dict = args[11]
 
     @classmethod

@@ -151,11 +151,10 @@ def load(variants: List[db_schema.Variant], aa_changes: Set[db_schema.AAChange],
     db_schema.NUCChange.db().insert_many(map(vars, nuc_changes))
 
 
-if __name__ == "__main__":
-    LOCAL_PATH = "." + LOCAL_PATH
+def run():
     try:
         # EXTRACT
-        # download_source_file()
+        download_source_file()
         source_variants = read_input_file()
 
         # for var in source_variants:
@@ -191,7 +190,10 @@ if __name__ == "__main__":
             load(variants, aa_changes, nuc_changes)
         finally:
             connection.close_conn()
-
-
     except:
         logger.exception("")
+
+
+if __name__ == "__main__":
+    LOCAL_PATH = "." + LOCAL_PATH
+    run()
