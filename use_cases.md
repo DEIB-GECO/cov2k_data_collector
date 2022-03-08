@@ -67,22 +67,27 @@ We extract the amino acid positional changes related to the requested Variant of
 
 [/combine/aa_positional_changes/contexts/variants?naming_id=VOC-20DEC-02](http://gmql.eu/cov2k/api/combine/aa_positional_changes/contexts/variants?naming_id=VOC-20DEC-02)
 
-The result has 21 elements. In order to check the specific coordinates of the the Receptor-binding domain 
-according to UniProtKB annotations, we can call:
+The result has 21 elements. From now on, the API can be used to understand which elements fall within the Receptor-binding domain.
 
-[/combine/protein_regions?protein_id=S](http://gmql.eu/cov2k/api/combine/protein_regions?protein_id=S)
+*Step 1:*
+A list of regions within the Spike protein can be extracted as follows:
 
-By looking at the element 
-with `name` "receptor-binding domain (rbd)"
-we learn that it falls within the 319 and 541 positions of the Spike protein. 
+[/protein_regions?protein_id=S](http://gmql.eu/cov2k/api/protein_regions?protein_id=S)
+
+Manual inspection of the list leads to identify an element with `name` "receptor-binding domain (rbd)"
+that falls within the 319 and 541 positions of the Spike protein. 
+Of course, if the user had known from the beginning how the RBD is encoded as a string in UniProtKB, she chould have directly called:
+
+[/protein_regions?name=receptor-binding domain (rbd)](http://gmql.eu/cov2k/api/protein_regions?name=receptor-binding%20domain%20(rbd))
 
 <img width="1059" alt="image" src="https://user-images.githubusercontent.com/11488353/157054173-b357144a-43cb-4247-a60b-1405f1e0dc78.png">
 
-Then, from the previous result list, we can select the amino acid positional changes that have:
+*Step 2:*
+We then inspect the list of changes characterizing variant VOC-20DEC-02, 
+looking for those whose:
 
-1. the same `protein_id` as the one of RBD (protein S);
-1. a `position` that is included in the 
-within the `start_on_protein` and `stop_on_protein` range of RBD.
+1. `protein_id` is protein S;
+1. `position` is included within the `start_on_protein` (319) and `stop_on_protein` (540) range of RBD.
 
 Only four _AA positional changes_ out of the initial 21 in the result occur within the chosen coordinates.
 
