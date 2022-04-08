@@ -9,9 +9,9 @@ e.g., for the _Evidence_ entity we use the endpoint [/evidences](http://gmql.eu/
 For each endpoint, there are four possible uses:
 
 1. Without parameters (e.g., [/evidences](http://gmql.eu/cov2k/api/evidences)), returning all the instances of the entity.
-1. With a path parameter specifying the entity identifier (e.g., [/evidences/6215f9756db69cf570802534](https://gmql.eu/cov2k/api/evidences/6215f9756db69cf570802534)), returning only the instance with the given identifier.
-1. With a query parameter specifying an attribute-value pair for that entity (e.g., [/evidences?type=preprint](https://gmql.eu/cov2k/api/evidences?type=preprint)), returning the set of evidences with the given type.
-1. With a query parameter linking that entity to another entity through a relationship (e.g., [/evidences?effect_id=61a10771969bdc8874782f50](https://gmql.eu/cov2k/api/evidences?effect_id=61a10771969bdc8874782f50)), returning the set of instances of the first entity that are linked to the instances of the second entity with the specified identifier.
+1. With a path parameter specifying the entity identifier (e.g., [/evidences/6215f9756db69cf570802534](http://gmql.eu/cov2k/api/evidences/6215f9756db69cf570802534)), returning only the instance with the given identifier.
+1. With a query parameter specifying an attribute-value pair for that entity (e.g., [/evidences?type=preprint](http://gmql.eu/cov2k/api/evidences?type=preprint)), returning the set of evidences with the given type.
+1. With a query parameter linking that entity to another entity through a relationship (e.g., [/evidences?effect_id=61a10771969bdc8874782f50](http://gmql.eu/cov2k/api/evidences?effect_id=61a10771969bdc8874782f50)), returning the set of instances of the first entity that are linked to the instances of the second entity with the specified identifier.
 
 Note that, given two entities X and Y connected by a relationship, it is possible to extract the instances of one of them connected to a given instance of the other one.
 Recall that entity names are unique and that entity identifiers are constructed from entity names (i.e., `<entity_name>_id`).
@@ -114,7 +114,7 @@ A total of 115 effect records are extracted; the first three elements of the res
 
 The publications linked to each of the effects can be checked using the [/evidences](https://gmql.eu/cov2k/api/evidences) endpoint with a specific `epitope_id`, for example:
 
-https://gmql.eu/cov2k/api/evidences?effect_id=61a10781969bdc8874783f87
+http://gmql.eu/cov2k/api/evidences?effect_id=61a10781969bdc8874783f87
 
 
 ## Use case 4
